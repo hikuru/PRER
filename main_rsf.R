@@ -3,19 +3,12 @@ library(survival)
 library(glmnet)
 library(foreach)
 library(doParallel)
-library("ggplot2")
-library(extrafont)
-library("R.matlab")
-library("igraph")
 
-source("reader.R")
-source("models.R")
+
 source(paste0(getwd(),"models.R"))
 
 options(rf.cores=detectCores(), mc.cores=detectCores())
 registerDoParallel(8)
-##### USED CONFIGURATION
-# quantile(KIRC_POF_COX_60_60_10_1_05_all$cinds)
 
 ###############################################################################################
 ###############################################################################################
