@@ -47,25 +47,25 @@ hnsc_PRER <- comparator3(rppa = rppa, dd = hnsc$data,randomWalks = randomWalks)
 ###############################################################################################
 # Start Cox Screen to eliminate features which are not significant
 
-ov_PRER_cox <- screening.cox(ov,ov_PRER,1)
+ov_PRER_cox <- filt_rw(screening.cox(ov,ov_PRER,1)
 
-gbm_PRER_cox <- screening.cox(gbm,gbm_PRER,1)
+gbm_PRER_cox <- filt_rw(screening.cox(gbm,gbm_PRER,1))
 
-kirc_PRER_cox <- screening.cox(kirc,kirc_PRER,1)
+kirc_PRER_cox <- filt_rw(screening.cox(kirc,kirc_PRER,1))
 
-blca_PRER_cox <- screening.cox(blca,blca_PRER,1)
+blca_PRER_cox <- filt_rw(screening.cox(blca,blca_PRER,1))
 
-brca_PRER_cox <- screening.cox(brca,brca_PRER,1)
+brca_PRER_cox <- filt_rw(screening.cox(brca,brca_PRER,1))
 
-hnsc_PRER_cox <- screening.cox(hnsc,hnsc_PRER,1)
+hnsc_PRER_cox <- filt_rw(screening.cox(hnsc,hnsc_PRER,1))
 
-luad_PRER_cox <- screening.cox(luad,luad_PRER,1)
+luad_PRER_cox <- filt_rw(screening.cox(luad,luad_PRER,1))
 
-coad_PRER_cox <- screening.cox(coad,coad_PRER,1)
+coad_PRER_cox <- filt_rw(screening.cox(coad,coad_PRER,1))
 
-ucec_PRER_cox <- screening.cox(ucec,ucec_PRER,1)
+ucec_PRER_cox <- filt_rw(screening.cox(ucec,ucec_PRER,1))
 
-lusc_PRER_cox <- screening.cox(lusc,lusc_PRER,1)
+lusc_PRER_cox <- filt_rw(screening.cox(lusc,lusc_PRER,1))
 
 ###############################################################################################
 ###############################################################################################
