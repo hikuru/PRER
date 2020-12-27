@@ -576,4 +576,21 @@ individualRank <- function(pofRes,rawData){
   return(ind_features[ord,])
 }
 
+filt_rw<-function(prer_cox){
+  ft = colnames(prer_cox)
+  dd <- matrix(nrow = length(ft),ncol=2)
+  dd[,1] <- sapply(strsplit(as.character(ft), split='-', fixed=TRUE), function(x) (x[1]))
+  dd[,2] <- sapply(strsplit(as.character(ft), split='-', fixed=TRUE), function(x) (x[2]))
+  
+  ddd = apply(dd, 1,function(x) (paste(x[2],x[1],sep = "-")))
+  
+  check = logical(length = length(ft))
+  for (i in 2:length(check)) {
+    cont = ddd[i]
+    check[i] = cont %in% ft[1:(i-1)]
+    
+  }
+  prer_cox[,check] <- 0
+  return(prer_cox)
+}
 
