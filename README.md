@@ -22,7 +22,7 @@ Required R packages
 - doParallel
 
 ### Random walk data
-Download preprocessed random walk data from <a href="drive linki">**link**</a>, save it to `randomWalk/`
+Download preprocessed random walk data from <a href="https://drive.google.com/file/d/1KRjSuWVj9INrauBOSMHY8vupNM-QmF92/view?usp=sharing">**link**</a>, save it to `randomWalk/`
 
 ### Reading and processing raw data
 ```shell
