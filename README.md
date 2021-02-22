@@ -24,7 +24,7 @@ Required R packages
 ### Random walk data
 Download preprocessed random walk data from <a href="https://drive.google.com/file/d/1KRjSuWVj9INrauBOSMHY8vupNM-QmF92/view?usp=sharing">**link**</a>, save it to `randomWalk/`
 
-You can also generate your own random walk data by using the following comment.
+You can also generate your own random walk data by using the following command.
 ```shell
 python randomWalk/main.py --input randomWalk/ppi_edgelist.csv --output randomWalk/randomWalks.txt --walk-length 100 --num-walks 18 --p 0.25 --q 0.25 --workers 8
 ```
